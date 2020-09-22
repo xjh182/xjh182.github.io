@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Doki Doki Literature Club</title>
+	<link rel="icon" href="favicon.ico">
+	<audio autoplay="" loop="" src="bgm/1.ogg" id="oau">
+		<embed src="bgm/1.ogg" autostart="true" loop="true" hidden="true">
+	</audio>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oau=document.getElementById('oau');
+			oau.play();
+			var sicker_s=document.getElementById('sicker_s');
+			var sicker_n=document.getElementById('sicker_n');
+			var sicker_m=document.getElementById('sicker_m');
+			var sicker_y=document.getElementById('sicker_y');
+			var timer;
+
+			function jump_s()
+			{
+				sicker_s.src="images/gui/poemgame/s_sticker_2.png";
+				sicker_s.style.bottom = '80px';
+				// alert(sicker_s.offsetTop);
+				setTimeout(function()
+				{
+					sicker_s.style.bottom = '0px';
+					sicker_s.src="images/gui/poemgame/s_sticker_1.png";
+				},400);
+			}
+
+			function jump_n()
+			{
+				sicker_n.src="images/gui/poemgame/n_sticker_2.png";
+				sicker_n.style.bottom = '80px';
+				// alert(sicker_s.offsetTop);
+				setTimeout(function()
+				{
+					sicker_n.style.bottom = '0px';
+					sicker_n.src="images/gui/poemgame/n_sticker_1.png";
+				},400);
+			}
+
+			function jump_m()
+			{
+				sicker_m.src="images/gui/poemgame/m_sticker_2.png";
+				sicker_m.style.bottom = '80px';
+				// alert(sicker_s.offsetTop);
+				setTimeout(function()
+				{
+					sicker_m.style.bottom = '0px';
+					sicker_m.src="images/gui/poemgame/m_sticker_1.png";
+				},400);
+			}
+
+			function jump_y()
+			{
+				var arr=[1,2,3,4,5];
+				var xuanze=Math.floor((Math.random()*arr.length));
+
+				if (arr[xuanze]==3)
+				{
+					sicker_y.src="images/gui/poemgame/y_sticker_2g.png";
+				}
+				else
+				{
+					sicker_y.src="images/gui/poemgame/y_sticker_2.png";
+				}
+				sicker_y.style.bottom = '80px';
+				// alert(sicker_s.offsetTop);
+				
+				setTimeout(function()
+				{
+					sicker_y.style.bottom = '0px';
+					sicker_y.src="images/gui/poemgame/y_sticker_1.png";
+				},400);
+			}
+
+		sicker_s.onmouseover=jump_s;
+		sicker_n.onmouseover=jump_n;
+		sicker_m.onmouseover=jump_m;
+		sicker_y.onmouseover=jump_y;
+		}
+	</script>
+</head>
+<body>
+	<div id="menu">
+		<a href="#">
+			<img src="images/gui/logo.png">
+		</a>
+		<ul>
+			<li><a href="#gamejieshao">游戏介绍</a></li>
+			<li><a href="#download">资源下载</a></li>
+			<li><a href="#renwujieshao">人物介绍</a></li>
+			<li><a href="#jiemi">解密</a></li>
+		</ul>
+	</div>
+	<div id="neirong">
+		<div id="biaotiauto">
+			<span id="CUHM">Can you here me?</span>
+		</div>
+		<div id="wenziauto">
+			<span id="thisis">This is DokiDoki Literature Club</span>
+		</div>
+		<center>
+			<img id="chr" src="images/promo.png">
+		</center>
+	</div>
+	<div id="gamejieshao">
+		<center><h2>嗨，这里是莫妮卡</h2></center>
+		<p>欢迎来到文学部！从我所热爱的文学中创造出一些特别的东西一直是我的梦想。既然你是文学部成员，你可以帮我在这个可爱的游戏中实现梦想！<br>
+		这里每天都有有趣的活动，还有我所有的可爱又独特的部员：<br>
+		紗世理，年轻，阳光，视幸福为最重要的东西<br>
+		夏树，一个小傲娇。<br>
+		優里，一个害羞神秘的人，在书的世界里找到安慰；<br>
+		…当然还有莫妮卡，文学部的部长！就是我！<br>
+		我非常高兴你能和大家交朋友，帮助文学部成为我大家的一个更亲密的地方。我已经知道你是个小甜心，你能保证花最多的时间和我在一起吗?
+		</p>
+	</div>
+	<div id="download">
+		<br>
+		<center><h1>游戏资源.MOD下载</h1></center>
+		<a href="DokiDoki.zip">DDLC原版</a>
+		<a href="https://cykadev.com/rainclouds/">DDLC.乌云(紗世理视角)</a>
+		<a href="http://www.monikaafterstory.com/">Monika After Story </a>
+		<br>
+		<a href="https://www.reddit.com/comments/83kpd0">save them all</a>
+		<a href="https://www.reddit.com/r/DDLC/comments/809fgn/doki_doki_rainclouds_megathread/">Yuri's Route</a>
+		<br>
+		<a href="https://www.reddit.com/r/DDLCMods/comments/7ib62j/a_brand_new_day_beta_wip/">A Brand New Day</a>
+		<br>
+		<a href="https://cykadev.com/dokidoki/">心跳健身俱乐部</a>
+		<a href="https://www.reddit.com/r/DDLCMods/comments/7pfeye/demo_monika_route_mod/">Monika Route Mod</a>
+		<br>
+		<a href="https://ddlc-behind-closed-doors.carrd.co/">Doki Doki: 
+Behind Closed Doors</a>
+		<br>
+		<a href="https://www.reddit.com/r/DDLCMods/comments/83ncz6/demo_doki_doki_date_club_the_doki_doki_dating_sim/">Doki Doki Date Club!</a>
+		<a href="https://www.reddit.com/r/DDLCMods/comments/88hvry/true_literature_club_tlc_mod_full_release_a_more/">True Literature Club</a>
+		<a href="https://cykadev.com/neweyes/">DOKI DOKI! NEW EYES</a>
+	</div>
+	<div id="renwujieshao">
+		<center><h1 style="font-family: monika;">人物介绍</h1></center>
+		<br>
+		<div class="juese" style="font-family: monika">
+			<img src="images/gui/menu_art_m.png">
+			<div class="jieshaowenzi-l">
+				<center><h1>莫妮卡</h1></center>
+				<p>文学部部长，在全校都相当受欢迎<br>的学园偶像！<br>喜欢文学，喜欢唱歌，喜欢钢琴。</p>
+				<p>不仅长得漂亮，而且学习和运动<br>也都很厉害，</p>
+				<p>以前曾是辩论部的部长，所以也<br>相当能说会道</p>
+				<P>热爱文学，一心想在文学部实现<br>自己的梦想。</P>
+				<P>总之是一位相当优秀的部长，在文<br>学部等着你哦~</P>
+			</div>	
+		</div>
+		<div class="juese" style="font-family: sayori">
+			<img src="images/gui/menu_art_s.png">
+			<div class="jieshaowenzi-r">
+				<center><h1>紗世理</h1></center>
+				<p>主角的青梅竹马，文学部的副部长，<br>一个性格阳光的冒失娘<br>喜欢文学，视幸福为最重要的东西</p>
+				<p>为人善良，处理人际关系的能力也很强</p>
+				<P>她可是最想让你加入文学部的那个人哦~</P>
+			</div>	
+		</div>
+		<div class="juese" style="font-family: natsuki">
+			<img src="images/gui/menu_art_n.png">
+			<div class="jieshaowenzi-l">
+				<center><h1>夏树</h1></center>
+				<p>文学部成员，一个傲娇
+				<br>
+				因为营养不良的原因，发育过晚，所以是
+				<br>看起来像个萝莉</p>
+				<p>实际上年龄跟大家一样哦，所以不要搞错
+				<br>她的年龄，她会生气的</p>
+				<p>她喜欢漫画，还有烘焙，所以如果你也<br>
+				喜欢漫画的话，可以和她讨论，如果你喜欢<br>甜点的话，那更不应错过！</P>
+			</div>	
+		</div>
+		<div class="juese" style="font-family: yuri">
+			<img src="images/gui/menu_art_y.png">
+			<div class="jieshaowenzi-r">
+				<center><h1>优里</h1></center>
+				<p>文学部成员，一个优雅，神秘，文静，
+				<br>美丽的女孩
+				<br>同时是文学部里文采最好的
+				<p>总是害羞，紧张，经常不说话，并一
+				<br>个人看着书</p>
+				<p>喜欢写诗，喜欢看书时泡一杯茶，喜欢
+				<br>收藏刀具</p>
+				<p>听说还有不为人知的小秘密呢</P>
+			</div>	
+		</div>
+	</div>
+	<img src="images/gui/poemgame/s_sticker_1.png" id="sicker_s" class="sicker">
+	<img src="images/gui/poemgame/n_sticker_1.png" id="sicker_n" class="sicker">
+	<img src="images/gui/poemgame/m_sticker_1.png" id="sicker_m" class="sicker">
+	<img src="images/gui/poemgame/y_sticker_1.png" id="sicker_y" class="sicker">
+</body>
+</html>

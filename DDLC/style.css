@@ -1,0 +1,157 @@
+﻿	html{
+		cursor:url("images/gui/mouse/s_head2.png"),default;
+	}
+	@font-face {
+		font-family: natsuki;
+		src:url('fonts/SentyMARUKO.ttf');
+	}
+	@font-face{
+		font-family: monika;
+		src:url('fonts/SentyTEA.ttf');
+	}
+	@font-face{
+		font-family: sayori;
+		src:url('fonts/SentyPea.ttf');
+	}
+	@font-face{
+		font-family: yuri;
+		src:url('fonts/yori.ttf');
+	}
+	body{
+		background: url(images/gui/menu_bg.png);
+	}
+	*{
+		margin: 0;
+	}
+	#menu{
+		position: fixed;
+		height: 4em;
+		background-color: pink;
+		z-index: 500;
+		width: 100%;
+	}
+	#menu img{
+		width: 6em;
+		position: relative;
+		left: 5em;
+	}
+	#menu ul li{
+		float: left;
+		list-style: none;
+		margin-left: 4.5em;
+		position: relative;
+		top: -4.8em;
+		left: 10em;
+	}
+	a{
+		text-decoration:none;
+	}
+	#menu ul li a{
+		color: #000;
+		font-family: monika;
+		font-size: 1.5em;
+	}
+	form{
+		text-align: right;
+		margin-right: 11em;
+		margin-top: -1em;
+	}
+	#CUHM{
+		font-family: monika;
+		font-size: 50px;
+	}
+	#biaotiauto{
+		width: 350px;
+		margin: auto;
+	}
+	#wenziauto{
+		width: 295px;
+		margin: auto;
+	}
+	#thisis{
+		font-family: monika;
+		font-size: 24px;
+		text-align:center;
+		position: relative;
+		top: 1em;
+	}
+	#neirong{
+		position: relative;
+		top: 5em;
+	}
+	#chr{
+		position: relative;
+		top: 100px;
+	}
+	#gamejieshao{
+		width: 100%;
+		position: relative;
+		top: 11em;
+		font-family: monika;
+		background: pink;
+	}
+	#gamejieshao h2{
+		font-size: 35px;
+	}
+	#gamejieshao p{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	#download{
+		position: relative;
+		top: 11em;
+		font-family: monika;
+		background: pink;
+	}
+	#download a{
+		color: #000;
+		font-weight: bold;
+		font-size: 30px;
+		margin-left: 1.5em;
+	}
+	#renwujieshao{
+		position: relative;
+		top: 12em;
+	}
+	#renwujieshao img{
+		width: 20em;
+	}
+	.juese{
+		width: 850px;
+		margin: auto;
+	}
+	.jieshaowenzi-l{
+		float: left;
+	}
+
+	.jieshaowenzi-l h1,p{
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.jieshaowenzi-r{
+		float: right;
+	}
+	.jieshaowenzi-r p{
+		font-size: 25px;
+		font-weight: bold;
+	}
+	#sicker_s{
+		left: 0;
+		bottom: 0;
+	}
+	#sicker_n{
+		left: 8em;
+		bottom: 0;
+	}
+	#sicker_m{
+		right: 8em;
+		bottom: 0;
+	}
+	#sicker_y{
+		right: 0;
+		bottom: 0;
+	}
+	.sicker{
+		position: fixed;
+		z-index: 500;
+	}

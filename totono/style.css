@@ -1,0 +1,261 @@
+	@font-face{
+		font-family: siyuan;
+		src:url(fonts/SourceHanSerifSC_Medium.otf);
+	}
+	*{
+		font-family: siyuan;
+		margin: 0;
+	}
+	html,body{
+		height: 100%;
+	}
+	#topback{
+		position: fixed;
+	}
+	#backimg{
+		width: 100%;
+		z-index: -50;
+	}
+	#logo{
+		width: 20em;
+		position: fixed;
+		top: 10em;
+		left: 20em;
+	}
+	#menu{
+		position: fixed;
+		top: 0;
+		height: 70px;
+		background-color: #fff;
+		z-index: 500;
+		width: 100%;
+		opacity: 0.9;
+		box-shadow: 1px 4px 4px #717171;
+	}
+	#menu ul li{
+		float: left;
+		list-style: none;
+		margin-left: 4.5em;
+		position: relative;
+		top: 1em;
+		left: 10em;
+		padding-bottom: 53px;
+	}
+	a{
+		text-decoration:none;
+	}
+	#menu ul li a{
+		color: #000;
+		font-size: 1.5em;
+	}
+	.biaoti{
+		position: relative;
+		background: #333;
+		height: 6em;
+		color: #fff;	
+	}
+	.biaoti h2{
+		line-height:4em;
+	}
+	#gamejieshao{
+		position: relative;
+		width: 100%;
+	}
+	#jieshaoneirong{
+		background: url(img/bg_2.jpg);
+		background-size: 100% 100%;
+		width: 100%;
+		height: 60em;
+	}
+	#wenzi{
+		top: 8em;
+		width: 60em;
+		position: relative;
+		margin: 0 auto;
+	}
+	#wenzi p{
+		font-size: 25px;
+		font-family: siyuan;
+	}
+	#wenzi h1{
+		font-family: siyuan;
+	}
+	#renwuqiehuan{
+		background-color: #ccc;
+		z-index: 500;
+		width: 100%;
+	}
+	#renwuqiehuan ul li{
+		float: left;
+		list-style: none;
+		margin-left: 7em;
+		font-family: siyuan;
+		font-size: 1.5em;
+		position: relative;
+		top: 5px;
+	}
+	#ul1{
+		width: 60em;
+		height: 3em;
+		margin: 0 auto;
+	}
+	#ul1 ul li{
+		padding: 0 3em;
+		margin: 0;
+		position: relative;
+		cursor: pointer;
+	}
+	#tupianqiehuan{
+		position: relative;
+		background: #fff;
+		height: 55em;
+	}
+	.dissplay{
+		width: 45em;
+		margin: 0 auto;
+		position: relative;
+		top: 7em;
+		
+	}
+	.dissplay h1{
+		font-size: 40px;
+	}
+	.dissplay img{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#c2 img{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#aoi_m{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#miyuki_m{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#c4 img{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#wenzi_m{
+		position: absolute;
+		right: 0;
+	}
+	.left{
+		position: absolute;
+        top: 50%;
+        left: 2em;
+        transform: translateY(-50%);
+        cursor: pointer;
+	}
+	.right {
+		position: absolute;
+        top: 50%;
+        right: 2em;
+        transform: translateY(-50%);
+        cursor: pointer;
+	}
+	#c5 h1{
+		font-size: 15px;
+	}
+	#c5 #yutaro{
+		position: absolute;
+		left: 261px;
+	}
+	#c5 #haru{
+		position: absolute;
+		left: 439px;
+		top: 90px;
+	}
+	#c5 #haru_wenzi{
+		width: 180px;
+		position: relative;
+		left: 577px;
+	}
+	#tupianqiehuan a{
+		color: #7f7f7f;
+	}
+	#app{
+		z-index: 1000;
+		position: fixed;
+		bottom: 0;
+		width: 300px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	#video_box{
+		background: url(img/bg_3.jpg);
+		height: 950px;
+		width: 100%;
+		background-size: 100% 100%;
+		position: absolute;
+	}
+	#box{
+		width: 720px;
+		height: 175px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+
+	}
+	#box div{
+		float: left;
+		margin-left: 20px;
+	}
+	#box img{
+		width: 220px;
+		cursor: pointer;
+	}
+	#videoPlayer{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		position: fixed;
+		z-index: 10000;
+		display: none;
+	}
+	#videoPlayer video{
+		margin: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.guanbi{
+		width: 50px;
+		cursor: pointer;
+	}
+	#renwujiexi{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		position: fixed;
+		z-index: 20000;
+		display: none;
+	}
+	#vplay{
+		width: 850px;
+	}
+	.jiexineirong{
+		width: 60%;
+		height: 100%;
+		background:  rgba(255,255,255,0.8);
+		position:relative;
+		top: -60px;
+		left:50%;
+		transform:translate(-50%);
+		overflow: scroll;
+		display: none;
+	}

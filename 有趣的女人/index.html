@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div id="videoPlayer">
+		<div id="v_left" class="left">
+			<img src="img/left.svg">
+		</div>
+		<div id="v_right" class="right">
+			<img src="img/right.svg">
+		</div>
+		<img src="img/guanbi.png" id="guanbi" class="guanbi">
+		<video controls="controls" id="vplay"></video>	
+	</div>
+	<div id="app"></div>
+		<!-- 加载 cplayer 脚本 -->
+		<script src="js/cplayer.js"></script>
+		<script>
+  			let player = new cplayer({
+  				size: '15px',
+    			element: document.getElementById('app'),
+    			autoplay: 'true',
+    			playlist: [
+     				{
+        				src: 'music/赤﨑千夏,戸松遥,豊崎愛生 - 輪!Moon!dass!cry!.mp3',
+        				poster: 'img/music.jpg',
+        				name: '輪!Moon!dass!cry!',
+        				artist: '笨蛋，死宅，机器人',
+        				lyric: '歌词...',
+        				sublyric: '副歌词，一般为翻译...',
+        				album: '女子高生の無駄づかい'
+      				},
+      				{
+        				src: 'music/赤﨑千夏,戸松遥,豊崎愛生 - 青春のリバーブ.mp3',
+        				poster: 'img/music.jpg',
+        				name: '青春のリバーブ',
+        				artist: '笨蛋，死宅，机器人',
+        				lyric: '歌词...',
+        				sublyric: '副歌词，一般为翻译...',
+        				album: '女子高生の無駄づかい'
+      				},
+      				{
+        				src: 'music/16：20_akane.mp3',
+        				poster: 'img/music.jpg',
+        				name: '16：20',
+        				artist: 'akane',
+        				lyric: '歌词...',
+        				sublyric: '副歌词，一般为翻译...',
+        				album: '女子高生の無駄づかい'
+      				},
+      				{
+        				src: 'music/auLelia_miku.mp3',
+        				poster: 'img/music.jpg',
+        				name: 'auLelia',
+        				artist: '初音未来、低所得P',
+        				lyric: '歌词...',
+        				sublyric: '副歌词，一般为翻译...',
+        				album: '女子高生の無駄づかい'
+      				},
+      				{
+        				src: 'music/16：20_GUMI.mp3',
+        				poster: 'img/music.jpg',
+        				name: '16：20_GUMI',
+        				artist: 'GUMI、低所得P',
+        				lyric: '歌词...',
+        				sublyric: '副歌词，一般为翻译...',
+        				album: '女子高生の無駄づかい'
+      				},
+      				{
+        				src: 'music/流星メテエシカ_miku.mp3',
+        				poster: 'img/music.jpg',
+        				name: '流星メテエシカ',
+        				artist: '初音未来、低所得P',
+        				lyric: '歌词...',
+        				sublyric: '副歌词，一般为翻译...',
+        				album: '女子高生の無駄づかい'
+      				},
+      				{
+        				src: 'music/シークレット．シークエンス.mp3',
+        				poster: 'img/music.jpg',
+        				name: 'シークレット．シークエンス',
+        				artist: 'GUMI、低所得P',
+        				lyric: '歌词...',
+        				sublyric: '副歌词，一般为翻译...',
+        				album: '女子高生の無駄づかい'
+      				},
+    			]
+  			})
+		</script>
+	<div id="topback">
+		<img src="img/bg.jpg" id="backimg">
+	</div>
+	<header id="menu">
+		<ul>
+			<li><a href="#game-jj">动画介绍</a></li>
+			<li><a href="#pop">人物介绍</a></li>
+			<li><a href="#video-box">视频展示</a></li>
+			<li><a href="#">回顶部</a></li>
+		</ul>
+	</header>
+	<div id="gamejieshao">
+		<a name="game-jj" style="position: relative;top: -70px;display: block;height: 0;overflow: hidden;"></a>
+		<div id="youxijieshaobiaoti" class="biaoti">
+			<center><h2>动画简介</h2></center>
+		</div>
+		<div id="jieshaoneirong">
+			<div id="wenzi">
+				<br>
+				<br>
+				<h1>“我们习以为常的那些日常，也许就是连续不断发生的奇迹”</h1>
+				<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;———《日常》<br><br></p>
+				<p>《女高中生的虚度日常》是一部讲述在琦之玉女子高中里，几位性格多少有点残念的女高中生的日常，这部漫画角色设定的一部分是基于作者的真实经历（作者生活挺丰富多彩的。。。）<br><br></p>
+				<p>在这部漫画中核心主角是田中望（外号笨蛋），与另外两位女生菊池茜（外号死宅），鹭宫诗织（外号机器人）是从小学就在一起的闺蜜。除了这三位主角外还有中二病属性的山本美波，萝莉属性的百井咲久，较真的一奏，混血转校生染谷莉莉等人，每个高中女生角色在故事中都有很多很真实的一面，处于一种不算是孩子但也不算是成年人的状态，会有各种吐槽和搞笑的一面。<br><br></p>
+				<p>日常多神作，也能让人看的无忧无虑开心放心，有烦恼时来上一集绝对是排忧解难的良药。<br><br></p>
+				<p>女高中生做什么都可能会被拍成动画，女高中生什么都不做也会被拍成动画.jpg<br><br></p>
+			</div>
+		</div>
+		<div id="renwujieshao">
+			<a name="pop" style="position: relative;top: -70px;display: block;height: 0;overflow: hidden;"></a>
+			<div id="renwujieshaobiaoti" class="biaoti">
+				<center><h2>人物简介</h2></center>
+			</div>
+		<div id="renwujieshaoneirong">
+			<div id="renwuqiehuan">
+				<div id="ul1">
+					<ul id="ul2">
+						<li id="a1" onclick="nr(1,'a1');b=1;" class="xz" onmouseover="toBlack('a1')" onmouseout="fClear()">鹭宫诗织</li>
+						<li id="a2" onclick="nr(2,'a2');b=2;" class="xz" onmouseover="toBlack('a2')" onmouseout="fClear()">田中望</li>
+						<li id="a3" onclick="nr(3,'a3');b=3;" class="xz" onmouseover="toBlack('a3')" onmouseout="fClear()">菊池茜</li>
+						<li id="a4" onclick="nr(5,'a4');b=5;" class="xz" onmouseover="toBlack('a4')" onmouseout="fClear()">其他人</li>
+					</ul>
+				</div>
+			</div>
+			<div id="tupianqiehuan">
+				<div id="left" class="left" onclick="onLeft()">
+					<img src="img/left.svg">
+				</div>
+				<div id="right" class="right" onclick="onRight()">
+					<img src="img/right.svg">
+				</div>
+				<div id="c1" class="dissplay" style="display: none">
+					<h2>鹭宫诗织</h2>
+					<p>Saginomiya shiori</p>
+					<h3>绰号：机器人</h3>
+					<h3>CV：丰崎爱生</h3>
+					<br><br><br><br>
+					<p>性格冷淡的少女，喜欢微生物和研究学问。<br>梦想是成为生物学家</p>
+					<p>为了跟大家在一起，而报考琦女</p>
+					<img src="img/shiori.jpg">
+				</div>
+				<div id="c2" class="dissplay">
+					<h2>田中 望</h2>
+					<p>tanaka nosomu</p>
+					<h3>绰号：笨蛋、<s>有趣的女人、非洲巨蛙</s></h3>
+					<h3>CV：赤崎千夏</h3>
+					<br><br><br><br>
+					<h2>“话说，我现在说件很厉害的事可以吗？”</h2>
+					<h4>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——笨蛋的名言</h4>
+					<br><br><br><br>
+					<p>本作女主角</p>
+					<p>如同绰号一样是个笨蛋。</p>
+					<p>梦想是成为很厉害的女生，和很厉害的人恋爱（然而怕是无<br>
+					法实现了）</p>
+					<p>和谁都能自来熟，天不怕地不怕的KY</p>
+					<p>来学校第一天就给解除到的老师和学生起了绰号，然后不可<br>思议的流行开了。</p>
+					<P>成绩很差，自称状态好时能考到20分，好不容易记下来的<br>
+					知识上个厕所就忘了。</P>
+					<p>据动画第8话中的过场（女角色们的胸围排列）来看，胸围<br>
+					是倒数第一。<s>航天飞机场（比萝莉还小）</s></p>
+					<img src="img/miyuki.jpg">
+				</div>	
+				<div id="c3" class="dissplay" style="display: none">
+					<h2>菊池 茜</h2>
+					<p>kikuchi akane</p>
+					<h3>绰号:死宅</h3>
+					<h3>CV:户松遥</h3>
+					<br><br><br><br>
+					<p>以作者本人为原型创作的人物</p>
+					<p>如同其外号一样是个死宅</p>
+					<p>喜欢漫画、动画，超级腐女</p>
+					<p>梦想是成为漫画家，然而因为画工的问题闹过不少笑话<br>（比如不会画膝盖。。。）</p>
+					<p>热爱BL文化，在看到两个男性之间过于亲密的举动时会<br>发动“B&L之眼”。</p>
+					<p>是低所得P（P主：指用vocaload系列人声合成软件创造音乐<br>
+					的作者，菊池茜所喜欢的P主，网络ID为：低所得P）的狂热<br>
+					粉丝，曾翻唱过低所得P的歌曲。</p>
+					<p>擅长打扮，TV版中造型十分多变假的死宅。</p>
+					<p>胸围在主要角色中排名第二，仅次于一奏。</p>
+					<img src="img/aoi.jpg">
+				</div>
+				<div id="c4" class="dissplay" style="display: none">
+					<img src="img/aoi.jpg" id="aoi_m">
+					<img src="img/miyuki.jpg" id="miyuki_m">
+					<img src="img/shiori.jpg" id="shiori_m">
+				</div>
+				<div id="c5" class="dissplay" style="display: none">
+					<div class="othChr">
+						<img src="img/chr/waseda.jpg" alt="">
+						<span>
+							佐渡正敬(sawatari masataka)
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配音：兴津和幸
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绰号：早稻田
+						</span>
+						<p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原型是作者的丈夫，认真负责的班主 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;任，第一天自我介绍时就一本正经的宣布只喜欢女大学生，对女高中生不感兴趣（才怪），业余时间用V家软件写歌，是菊池茜所粉的“低所得P”的真实身份，而在现实中，“低所得P”的账号由夫妻共同运营，<s>所以这整部动漫都是他俩撒的狗粮</s></p>
+					</div>
+					<div class="othChr">
+						<img src="img/chr/joni.jpg" alt="">
+						<span>
+							山本美波(yamamoto minami)
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配音：富田美忧
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绰号：病妹
+						</span>
+						<p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全身各部位都缠起了绷带，不是因为生 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;病，而是为了掩盖青春痘，还有为了耍帅，虽然是个十足的中二病。但她其实很怂，甚至有一次被魔女的防毒面具所吓到。与田中某方面相性很好，而本人之后也有意识到这点，这点被早稻田视为“恶梦般的连携”。</p>
+					</div>
+					<div class="othChr chrLift">
+						<img src="img/chr/loli.jpg" alt="">
+						<span>
+							百井咲久(momoi saku)
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配音：长绳麻里亚
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绰号：萝莉
+						</span>
+						<p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;体型娇小，因为身处叛逆期，不想被别 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人看扁，故总是一副反抗<s>傲娇</s>的态度，却常常被田中捉弄，实际上是个好孩子。各方面都表现出与女高中生年龄不符的幼稚。因为父母去了法国，现在跟奶奶住在一起，跟奶奶关系很好.</p>
+					</div>
+					<div class="othChr chrR" id="kanade">
+						<img src="img/chr/majime.jpg" alt="">
+						<span>
+							一奏(ninomae kanade)
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配音：高桥李依
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绰号：死正经
+							<p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓氏写作“一”，读作“にのまえ &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（二之前）”，不过中文的话随便。很正经的人，但脑回路常常被田中带偏。是个学霸，但中考时过于倒霉，发挥不好，只能来琦之玉。不擅长打扮，一副中性风格被莉莉吐槽为：“你是男子初中生吗？”。是个隐藏巨乳，众人中最大的 <s>论高桥李依终于摆脱了平胸</s></p>
+						</span>
+						<p></p>
+					</div>
+					<div class="othChr chrR">
+						<img src="img/chr/majo.jpg" alt="">
+						<span>
+							久条翡翠(kujou hisui)
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配音：M·A·O
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绰号：魔女
+						</span>
+						<p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重度社交恐惧症患者，甚至一度 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不去上课，沉迷血腥、恐怖、超自然的事物，经常收集一些奇怪的物品，如：满满一柜的泡在福尔马林里的标本、二战士兵用过的防毒面具等，虽然爱好很奇怪，但可爱且善良。在第12集，田中考试前，给田中做了材料不明的精力恢复药。</p>
+					</div>
+					<div class="othChr chrR">
+						<img src="img/chr/riri.jpg" alt="">
+						<span>
+							染谷莉莉(someya riri)
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配音：佐藤聪美
+							<br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绰号：莉莉（跟名字一样）
+						</span>
+						<p>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如模特儿般美貌的少女，追求者 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;很多，由于在初中时，追求者过于狂热，导致她患上了男性恐惧症，只要接触男性，身上就会过敏起疹子，不知为何接触田中时也会这样<s>田中带把的，鉴定完毕</s>有越来越橘里橘气的倾向，喜欢捉弄萝莉（没有恶意），经常跟萝莉和死正经在一起。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="video_box">
+			<a name="video-box" style="position: relative;top: -70px;display: block;height: 0;overflow: hidden;"></a>
+			<div id="shipinzhanshi" class="biaoti">
+				<center><h2>视频展示</h2></center>
+			</div>
+			<div id="box">
+				<script type="text/javascript">
+					function vidplay(v){
+						var oVideoPlayer=document.getElementById('videoPlayer');
+						var vplay=document.getElementById('vplay');
+						oVideoPlayer.style.display="block";
+						player.pause();
+						vplay.src=v;
+						vplay.play();
+					}
+				</script>
+				<div id="video1" class="videoBox">
+					<p>1</p>
+					<img src="img/pv.jpg" class="me_img" onclick="vid=1;vidplay('video/pv.mp4');">
+					<p>PV</p>
+				</div>
+				<div id="video2" class="videoBox">
+					<p>2</p>
+					<img src="img/op.jpg" class="me_img" onclick="vid=2;vidplay('video/op.mp4');">
+					<p>OP</p>
+				</div>
+				<div id="video3" class="videoBox">
+					<p>3</p>
+					<img src="img/11.jpg" class="me_img" onclick="vid=3;vidplay('video/11.mp4');">
+					<p>鬼知道作词人经历了什么</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
